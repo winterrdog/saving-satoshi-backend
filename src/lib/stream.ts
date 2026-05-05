@@ -57,6 +57,10 @@ class Stream extends Writable {
           }
           break
         }
+        default: {
+          logger.warn(`Unhandled language in getError: ${this.language}`)
+          break
+        }
       }
     }
 
